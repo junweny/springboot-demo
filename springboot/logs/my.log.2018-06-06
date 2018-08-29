@@ -1,0 +1,3 @@
+2018-06-06 21:26:37,338  INFO ApplicationDemo:48 ---- Starting ApplicationDemo on DESKTOP-K1U3UTI with PID 117124 (E:\workspace\springboot\target\classes started by yang in E:\workspace\springboot)
+2018-06-06 21:26:37,346 DEBUG ApplicationDemo:51 ---- Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2018-06-06 21:26:37,346  INFO ApplicationDemo:666 ---- No active profile set, falling back to default profiles: default

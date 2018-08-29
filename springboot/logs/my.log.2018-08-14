@@ -1,0 +1,15 @@
+2018-08-14 21:51:21,064  INFO RedisTest:50 ---- Starting RedisTest on DESKTOP-K1U3UTI with PID 74004 (started by yang in E:\workspace\springboot)
+2018-08-14 21:51:21,067 DEBUG RedisTest:53 ---- Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-08-14 21:51:21,067  INFO RedisTest:659 ---- No active profile set, falling back to default profiles: default
+2018-08-14 21:52:54,765  INFO RedisTest:50 ---- Starting RedisTest on DESKTOP-K1U3UTI with PID 72772 (started by yang in E:\workspace\springboot)
+2018-08-14 21:52:54,765 DEBUG RedisTest:53 ---- Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-08-14 21:52:54,766  INFO RedisTest:659 ---- No active profile set, falling back to default profiles: default
+2018-08-14 21:52:57,029  INFO RedisTest:59 ---- Started RedisTest in 2.409 seconds (JVM running for 2.985)
+2018-08-14 21:54:22,379  INFO SendEmailDemo:50 ---- Starting SendEmailDemo on DESKTOP-K1U3UTI with PID 67904 (started by yang in E:\workspace\springboot)
+2018-08-14 21:54:22,380 DEBUG SendEmailDemo:53 ---- Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-08-14 21:54:22,380  INFO SendEmailDemo:659 ---- No active profile set, falling back to default profiles: default
+2018-08-14 21:54:25,638  INFO SendEmailDemo:59 ---- Started SendEmailDemo in 3.398 seconds (JVM running for 3.964)
+2018-08-14 21:55:08,618  INFO RedisTest:50 ---- Starting RedisTest on DESKTOP-K1U3UTI with PID 64676 (started by yang in E:\workspace\springboot)
+2018-08-14 21:55:08,618 DEBUG RedisTest:53 ---- Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-08-14 21:55:08,619  INFO RedisTest:659 ---- No active profile set, falling back to default profiles: default
+2018-08-14 21:55:10,567  INFO RedisTest:59 ---- Started RedisTest in 2.091 seconds (JVM running for 2.672)

@@ -1,0 +1,6 @@
+2018-06-06 21:26:37,338  INFO ApplicationDemo:48 - Starting ApplicationDemo on DESKTOP-K1U3UTI with PID 117124 (E:\workspace\springboot\target\classes started by yang in E:\workspace\springboot)
+2018-06-06 21:26:37,346 DEBUG ApplicationDemo:51 - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2018-06-06 21:26:37,346  INFO ApplicationDemo:666 - No active profile set, falling back to default profiles: default
+2018-06-06 21:26:37,894  INFO AnnotationConfigEmbeddedWebApplicationContext:578 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72602531: startup date [Wed Jun 06 21:26:37 CST 2018]; root of context hierarchy
+2018-06-06 21:26:38,014  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2018-06-06 21:26:40,518  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1a6a4b32] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)

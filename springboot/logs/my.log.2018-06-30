@@ -1,0 +1,10 @@
+2018-06-30 08:32:05,499  INFO ApplicationDemo:48 ---- Starting ApplicationDemo on DESKTOP-K1U3UTI with PID 51076 (E:\workspace\springboot\target\classes started by yang in E:\workspace\springboot)
+2018-06-30 08:32:05,501 DEBUG ApplicationDemo:51 ---- Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2018-06-30 08:32:05,502  INFO ApplicationDemo:666 ---- No active profile set, falling back to default profiles: default
+2018-06-30 08:32:09,173  INFO ApplicationDemo:57 ---- Started ApplicationDemo in 3.839 seconds (JVM running for 4.165)
+2018-06-30 08:33:17,261  INFO WebLogAspect:32 ---- URL : http://localhost:8080/index3
+2018-06-30 08:33:17,261  INFO WebLogAspect:33 ---- HTTP_METHOD : GET
+2018-06-30 08:33:17,262  INFO WebLogAspect:34 ---- IP : 0:0:0:0:0:0:0:1
+2018-06-30 08:33:17,262  INFO WebLogAspect:35 ---- CLASS_METHOD : com.yang.test.controller.ThmeleafController.index
+2018-06-30 08:33:17,263  INFO WebLogAspect:36 ---- ARGS : [{}]
+2018-06-30 08:33:17,267  INFO WebLogAspect:43 ---- RESPONSE : index

@@ -1,0 +1,28 @@
+2018-04-04 17:26:17,168  INFO ApplicationDemo:48 ---- Starting ApplicationDemo on 6BWVWTX1WV1IG38 with PID 9728 (D:\workspace\springboot\target\classes started by Administrator in D:\workspace\springboot)
+2018-04-04 17:26:17,171 DEBUG ApplicationDemo:51 ---- Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2018-04-04 17:26:17,172  INFO ApplicationDemo:666 ---- No active profile set, falling back to default profiles: default
+2018-04-04 17:26:22,794  INFO ApplicationDemo:57 ---- Started ApplicationDemo in 5.918 seconds (JVM running for 6.316)
+2018-04-04 17:26:30,156  INFO WebLogAspect:32 ---- URL : http://localhost:8080/index3
+2018-04-04 17:26:30,157  INFO WebLogAspect:33 ---- HTTP_METHOD : GET
+2018-04-04 17:26:30,157  INFO WebLogAspect:34 ---- IP : 0:0:0:0:0:0:0:1
+2018-04-04 17:26:30,158  INFO WebLogAspect:35 ---- CLASS_METHOD : com.yang.test.controller.ThmeleafController.index
+2018-04-04 17:26:30,158  INFO WebLogAspect:36 ---- ARGS : [{}]
+2018-04-04 17:26:30,162  INFO WebLogAspect:43 ---- RESPONSE : index
+2018-04-04 17:27:18,079  INFO ApplicationDemo:48 ---- Starting ApplicationDemo on 6BWVWTX1WV1IG38 with PID 9728 (D:\workspace\springboot\target\classes started by Administrator in D:\workspace\springboot)
+2018-04-04 17:27:18,080 DEBUG ApplicationDemo:51 ---- Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2018-04-04 17:27:18,080  INFO ApplicationDemo:666 ---- No active profile set, falling back to default profiles: default
+2018-04-04 17:27:19,680  INFO ApplicationDemo:57 ---- Started ApplicationDemo in 1.654 seconds (JVM running for 63.2)
+2018-04-04 17:27:34,241  INFO ApplicationDemo:48 ---- Starting ApplicationDemo on 6BWVWTX1WV1IG38 with PID 3604 (D:\workspace\springboot\target\classes started by Administrator in D:\workspace\springboot)
+2018-04-04 17:27:34,244 DEBUG ApplicationDemo:51 ---- Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2018-04-04 17:27:34,244  INFO ApplicationDemo:666 ---- No active profile set, falling back to default profiles: default
+2018-04-04 17:27:39,593  INFO ApplicationDemo:57 ---- Started ApplicationDemo in 5.671 seconds (JVM running for 6.065)
+2018-04-04 17:28:19,591  INFO ApplicationDemo:48 ---- Starting ApplicationDemo on 6BWVWTX1WV1IG38 with PID 3604 (D:\workspace\springboot\target\classes started by Administrator in D:\workspace\springboot)
+2018-04-04 17:28:19,592 DEBUG ApplicationDemo:51 ---- Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2018-04-04 17:28:19,592  INFO ApplicationDemo:666 ---- No active profile set, falling back to default profiles: default
+2018-04-04 17:28:21,244  INFO ApplicationDemo:57 ---- Started ApplicationDemo in 1.704 seconds (JVM running for 47.715)
+2018-04-04 17:28:21,433  INFO WebLogAspect:32 ---- URL : http://localhost:8080/index3
+2018-04-04 17:28:21,433  INFO WebLogAspect:33 ---- HTTP_METHOD : GET
+2018-04-04 17:28:21,434  INFO WebLogAspect:34 ---- IP : 0:0:0:0:0:0:0:1
+2018-04-04 17:28:21,434  INFO WebLogAspect:35 ---- CLASS_METHOD : com.yang.test.controller.ThmeleafController.index
+2018-04-04 17:28:21,434  INFO WebLogAspect:36 ---- ARGS : [{}]
+2018-04-04 17:28:21,443  INFO WebLogAspect:43 ---- RESPONSE : index

@@ -1,0 +1,982 @@
+2018-04-04 17:26:17,168  INFO ApplicationDemo:48 - Starting ApplicationDemo on 6BWVWTX1WV1IG38 with PID 9728 (D:\workspace\springboot\target\classes started by Administrator in D:\workspace\springboot)
+2018-04-04 17:26:17,171 DEBUG ApplicationDemo:51 - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2018-04-04 17:26:17,172  INFO ApplicationDemo:666 - No active profile set, falling back to default profiles: default
+2018-04-04 17:26:17,340  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2018-04-04 17:26:17,441  INFO AnnotationConfigEmbeddedWebApplicationContext:578 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e0ceff8: startup date [Wed Apr 04 17:26:17 CST 2018]; root of context hierarchy
+2018-04-04 17:26:19,370  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5a8c9a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-04 17:26:20,068  INFO TomcatEmbeddedServletContainer:81 - Tomcat initialized with port(s): 8080 (http)
+2018-04-04 17:26:20,082  INFO StandardService:180 - Starting service Tomcat
+2018-04-04 17:26:20,083  INFO StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.0.32
+2018-04-04 17:26:20,188  INFO [/]:180 - Initializing Spring embedded WebApplicationContext
+2018-04-04 17:26:20,188  INFO ContextLoader:272 - Root WebApplicationContext: initialization completed in 2749 ms
+2018-04-04 17:26:20,466  INFO ServletRegistrationBean:189 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-04 17:26:20,470  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-04 17:26:20,470  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-04 17:26:20,471  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-04 17:26:20,471  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-04 17:26:21,313  INFO CglibAopProxy:270 - Unable to proxy method [java.util.List springfox.documentation.schema.property.OptimizedModelPropertiesProvider.candidateProperties(com.fasterxml.classmate.ResolvedType,com.fasterxml.jackson.databind.introspect.AnnotatedMember,com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition,springfox.documentation.spi.schema.contexts.ModelContext)] because it is package-visible across different ClassLoaders: All calls to this method via a proxy will NOT be routed to the target instance.
+2018-04-04 17:26:21,485  INFO RequestMappingHandlerMapping:534 - Mapped "{[/yang]}" onto java.lang.String com.yang.test.ApplicationDemo.home()
+2018-04-04 17:26:21,486  INFO RequestMappingHandlerMapping:534 - Mapped "{[/index3],methods=[GET]}" onto public java.lang.String com.yang.test.controller.ThmeleafController.index(org.springframework.ui.ModelMap)
+2018-04-04 17:26:21,488  INFO RequestMappingHandlerMapping:534 - Mapped "{[/data/mybatis/author],methods=[POST]}" onto public void com.yang.test.mybatis.controller.AuthorMybatisController.add(com.alibaba.fastjson.JSONObject)
+2018-04-04 17:26:21,489  INFO RequestMappingHandlerMapping:534 - Mapped "{[/data/mybatis/author/{userId:\d+}],methods=[PUT]}" onto public void com.yang.test.mybatis.controller.AuthorMybatisController.update(java.lang.Long,com.alibaba.fastjson.JSONObject)
+2018-04-04 17:26:21,489  INFO RequestMappingHandlerMapping:534 - Mapped "{[/data/mybatis/author/{userId:\d+}],methods=[DELETE]}" onto public void com.yang.test.mybatis.controller.AuthorMybatisController.delete(java.lang.Long)
+2018-04-04 17:26:21,490  INFO RequestMappingHandlerMapping:534 - Mapped "{[/data/mybatis/author],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.yang.test.mybatis.controller.AuthorMybatisController.getAuthorList(javax.servlet.http.HttpServletRequest)
+2018-04-04 17:26:21,490  INFO RequestMappingHandlerMapping:534 - Mapped "{[/data/mybatis/author/{userId:\d+}],methods=[GET]}" onto public com.yang.test.mybatis.entity.Author com.yang.test.mybatis.controller.AuthorMybatisController.getAuthor(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2018-04-04 17:26:21,491  INFO RequestMappingHandlerMapping:534 - Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController.index()
+2018-04-04 17:26:21,492  INFO RequestMappingHandlerMapping:534 - Mapped "{[/upload],methods=[POST]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController.singleFileUpload(org.springframework.web.multipart.MultipartFile,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-04-04 17:26:21,492  INFO RequestMappingHandlerMapping:534 - Mapped "{[/success],methods=[GET]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController.uploadSuccess()
+2018-04-04 17:26:21,494  INFO RequestMappingHandlerMapping:534 - Mapped "{[/index2],methods=[GET]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController2.index2()
+2018-04-04 17:26:21,495  INFO RequestMappingHandlerMapping:534 - Mapped "{[/upload2],methods=[POST]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController2.singleFileUpload2(org.springframework.web.multipart.MultipartFile,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-04-04 17:26:21,495  INFO RequestMappingHandlerMapping:534 - Mapped "{[/success2],methods=[GET]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController2.uploadSuccess2()
+2018-04-04 17:26:21,496  INFO RequestMappingHandlerMapping:534 - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-04-04 17:26:21,500  INFO RequestMappingHandlerMapping:534 - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-04-04 17:26:21,500  INFO RequestMappingHandlerMapping:534 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-04-04 17:26:21,501  INFO RequestMappingHandlerMapping:534 - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-04-04 17:26:21,504  INFO RequestMappingHandlerMapping:534 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-04 17:26:21,505  INFO RequestMappingHandlerMapping:534 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-04 17:26:21,735  INFO RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e0ceff8: startup date [Wed Apr 04 17:26:17 CST 2018]; root of context hierarchy
+2018-04-04 17:26:21,785  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 17:26:21,786  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 17:26:21,805  INFO ExceptionHandlerExceptionResolver:267 - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-04-04 17:26:21,827  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 17:26:22,337  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-04-04 17:26:22,393  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-04-04 17:26:22,410  INFO DocumentationPluginsBootstrapper:80 - Context refreshed
+2018-04-04 17:26:22,437  INFO DocumentationPluginsBootstrapper:83 - Found {0} custom documentation plugin(s)
+2018-04-04 17:26:22,445  INFO ApiListingReferenceScanner:53 - Scanning for api listing references
+2018-04-04 17:26:22,449  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method update was author-mybatis-controller
+2018-04-04 17:26:22,451  INFO ApiListingReferenceScanner:72 - Request mapping: update belongs to groups: [[ResourceGroup{groupName='author-mybatis-controller', position=0, controller=com.yang.test.mybatis.controller.AuthorMybatisController}]] 
+2018-04-04 17:26:22,453  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method delete was author-mybatis-controller
+2018-04-04 17:26:22,453  INFO ApiListingReferenceScanner:72 - Request mapping: delete belongs to groups: [[ResourceGroup{groupName='author-mybatis-controller', position=0, controller=com.yang.test.mybatis.controller.AuthorMybatisController}]] 
+2018-04-04 17:26:22,454  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthor was author-mybatis-controller
+2018-04-04 17:26:22,454  INFO ApiListingReferenceScanner:72 - Request mapping: getAuthor belongs to groups: [[ResourceGroup{groupName='author-mybatis-controller', position=0, controller=com.yang.test.mybatis.controller.AuthorMybatisController}]] 
+2018-04-04 17:26:22,455  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method add was author-mybatis-controller
+2018-04-04 17:26:22,455  INFO ApiListingReferenceScanner:72 - Request mapping: add belongs to groups: [[ResourceGroup{groupName='author-mybatis-controller', position=0, controller=com.yang.test.mybatis.controller.AuthorMybatisController}]] 
+2018-04-04 17:26:22,456  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthorList was author-mybatis-controller
+2018-04-04 17:26:22,456  INFO ApiListingReferenceScanner:72 - Request mapping: getAuthorList belongs to groups: [[ResourceGroup{groupName='author-mybatis-controller', position=0, controller=com.yang.test.mybatis.controller.AuthorMybatisController}]] 
+2018-04-04 17:26:22,457  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index2 was upload-controller-2
+2018-04-04 17:26:22,457  INFO ApiListingReferenceScanner:72 - Request mapping: index2 belongs to groups: [[ResourceGroup{groupName='upload-controller-2', position=0, controller=com.yang.test.mybatis.controller.UploadController2}]] 
+2018-04-04 17:26:22,458  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was thmeleaf-controller
+2018-04-04 17:26:22,458  INFO ApiListingReferenceScanner:72 - Request mapping: index belongs to groups: [[ResourceGroup{groupName='thmeleaf-controller', position=0, controller=com.yang.test.controller.ThmeleafController}]] 
+2018-04-04 17:26:22,459  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was upload-controller
+2018-04-04 17:26:22,460  INFO ApiListingReferenceScanner:72 - Request mapping: index belongs to groups: [[ResourceGroup{groupName='upload-controller', position=0, controller=com.yang.test.mybatis.controller.UploadController}]] 
+2018-04-04 17:26:22,461  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess2 was upload-controller-2
+2018-04-04 17:26:22,461  INFO ApiListingReferenceScanner:72 - Request mapping: uploadSuccess2 belongs to groups: [[ResourceGroup{groupName='upload-controller-2', position=0, controller=com.yang.test.mybatis.controller.UploadController2}]] 
+2018-04-04 17:26:22,462  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess was upload-controller
+2018-04-04 17:26:22,462  INFO ApiListingReferenceScanner:72 - Request mapping: uploadSuccess belongs to groups: [[ResourceGroup{groupName='upload-controller', position=0, controller=com.yang.test.mybatis.controller.UploadController}]] 
+2018-04-04 17:26:22,463  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload2 was upload-controller-2
+2018-04-04 17:26:22,463  INFO ApiListingReferenceScanner:72 - Request mapping: singleFileUpload2 belongs to groups: [[ResourceGroup{groupName='upload-controller-2', position=0, controller=com.yang.test.mybatis.controller.UploadController2}]] 
+2018-04-04 17:26:22,463  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload was upload-controller
+2018-04-04 17:26:22,464  INFO ApiListingReferenceScanner:72 - Request mapping: singleFileUpload belongs to groups: [[ResourceGroup{groupName='upload-controller', position=0, controller=com.yang.test.mybatis.controller.UploadController}]] 
+2018-04-04 17:26:22,464  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:26:22,465  INFO ApiListingReferenceScanner:72 - Request mapping: home belongs to groups: [[ResourceGroup{groupName='application-demo', position=0, controller=com.yang.test.ApplicationDemo}]] 
+2018-04-04 17:26:22,468  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/author-mybatis-controller Description: author-mybatis-controller Position: 0
+2018-04-04 17:26:22,470  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/upload-controller Description: upload-controller Position: 0
+2018-04-04 17:26:22,471  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/thmeleaf-controller Description: thmeleaf-controller Position: 0
+2018-04-04 17:26:22,471  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/application-demo Description: application-demo Position: 0
+2018-04-04 17:26:22,472  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/upload-controller-2 Description: upload-controller-2 Position: 0
+2018-04-04 17:26:22,486  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:26:22,487  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:26:22,495  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:26:22,496  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:26:22,502  INFO OperationsKeyGenerator:51 - Cache key generated: /yang.com.yang.test.ApplicationDemo.home.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,502  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /yang.com.yang.test.ApplicationDemo.home.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,512  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:26:22,515  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:26:22,518  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:26:22,519  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:26:22,520  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:26:22,521  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:26:22,522  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:26:22,523  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:26:22,524  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:26:22,525  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:26:22,526  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:26:22,527  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:26:22,528  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:26:22,529  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:26:22,530  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:26:22,531  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:26:22,555  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:26:22,555  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:26:22,555  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:26:22,556  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:26:22,558  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:26:22,558  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:26:22,588  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:26:22,588  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.Void(true)
+2018-04-04 17:26:22,589  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:26:22,589  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+2018-04-04 17:26:22,589  INFO OperationsKeyGenerator:51 - Cache key generated: /data/mybatis/author.com.yang.test.mybatis.controller.AuthorMybatisController.add.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,590  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /data/mybatis/author.com.yang.test.mybatis.controller.AuthorMybatisController.add.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,599  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method add was author-mybatis-controller
+2018-04-04 17:26:22,601  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method add was author-mybatis-controller
+2018-04-04 17:26:22,607  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:26:22,607  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.Void(true)
+2018-04-04 17:26:22,609  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:26:22,610  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+2018-04-04 17:26:22,610  INFO OperationsKeyGenerator:51 - Cache key generated: /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.delete.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,610  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.delete.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,612  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method delete was author-mybatis-controller
+2018-04-04 17:26:22,613  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method delete was author-mybatis-controller
+2018-04-04 17:26:22,615  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:26:22,615  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:26:22,616  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:26:22,616  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:26:22,633  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:26:22,633  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:26:22,634  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:26:22,634  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:26:22,635  INFO OperationsKeyGenerator:51 - Cache key generated: /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.getAuthor.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,635  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.getAuthor.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,637  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthor was author-mybatis-controller
+2018-04-04 17:26:22,647  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthor was author-mybatis-controller
+2018-04-04 17:26:22,652  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Object(true)
+2018-04-04 17:26:22,652  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.Object(true)
+2018-04-04 17:26:22,653  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Object(true)
+2018-04-04 17:26:22,653  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.Object(true)
+2018-04-04 17:26:22,653  INFO OperationsKeyGenerator:51 - Cache key generated: /data/mybatis/author.com.yang.test.mybatis.controller.AuthorMybatisController.getAuthorList.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,653  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /data/mybatis/author.com.yang.test.mybatis.controller.AuthorMybatisController.getAuthorList.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,655  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthorList was author-mybatis-controller
+2018-04-04 17:26:22,659  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthorList was author-mybatis-controller
+2018-04-04 17:26:22,661  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:26:22,661  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:26:22,661  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:26:22,662  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:26:22,662  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:26:22,663  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.Void(true)
+2018-04-04 17:26:22,663  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:26:22,664  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+2018-04-04 17:26:22,664  INFO OperationsKeyGenerator:51 - Cache key generated: /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.update.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,664  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.update.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,667  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method update was author-mybatis-controller
+2018-04-04 17:26:22,669  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method update was author-mybatis-controller
+2018-04-04 17:26:22,671  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:26:22,671  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:26:22,671  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:26:22,672  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:26:22,672  INFO OperationsKeyGenerator:51 - Cache key generated: /index3.com.yang.test.controller.ThmeleafController.index.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,672  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /index3.com.yang.test.controller.ThmeleafController.index.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,673  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was thmeleaf-controller
+2018-04-04 17:26:22,674  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was thmeleaf-controller
+2018-04-04 17:26:22,678  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:26:22,678  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:26:22,678  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:26:22,678  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:26:22,679  INFO OperationsKeyGenerator:51 - Cache key generated: /index.com.yang.test.mybatis.controller.UploadController.index.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,679  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /index.com.yang.test.mybatis.controller.UploadController.index.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,679  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was upload-controller
+2018-04-04 17:26:22,680  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was upload-controller
+2018-04-04 17:26:22,681  INFO CachingOperationNameGenerator:40 - Generating unique operation named: indexUsingGET_1
+2018-04-04 17:26:22,682  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:26:22,682  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:26:22,683  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:26:22,683  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:26:22,683  INFO OperationsKeyGenerator:51 - Cache key generated: /upload.com.yang.test.mybatis.controller.UploadController.singleFileUpload.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,684  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /upload.com.yang.test.mybatis.controller.UploadController.singleFileUpload.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,687  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload was upload-controller
+2018-04-04 17:26:22,688  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload was upload-controller
+2018-04-04 17:26:22,690  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:26:22,690  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:26:22,690  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:26:22,690  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:26:22,691  INFO OperationsKeyGenerator:51 - Cache key generated: /success.com.yang.test.mybatis.controller.UploadController.uploadSuccess.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,691  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /success.com.yang.test.mybatis.controller.UploadController.uploadSuccess.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,692  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess was upload-controller
+2018-04-04 17:26:22,692  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess was upload-controller
+2018-04-04 17:26:22,697  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:26:22,697  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:26:22,697  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:26:22,698  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:26:22,698  INFO OperationsKeyGenerator:51 - Cache key generated: /index2.com.yang.test.mybatis.controller.UploadController2.index2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,698  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /index2.com.yang.test.mybatis.controller.UploadController2.index2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,699  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index2 was upload-controller-2
+2018-04-04 17:26:22,700  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index2 was upload-controller-2
+2018-04-04 17:26:22,701  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:26:22,701  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:26:22,702  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:26:22,702  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:26:22,702  INFO OperationsKeyGenerator:51 - Cache key generated: /upload2.com.yang.test.mybatis.controller.UploadController2.singleFileUpload2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,702  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /upload2.com.yang.test.mybatis.controller.UploadController2.singleFileUpload2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,704  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload2 was upload-controller-2
+2018-04-04 17:26:22,705  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload2 was upload-controller-2
+2018-04-04 17:26:22,707  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:26:22,707  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:26:22,707  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:26:22,707  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:26:22,708  INFO OperationsKeyGenerator:51 - Cache key generated: /success2.com.yang.test.mybatis.controller.UploadController2.uploadSuccess2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,709  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /success2.com.yang.test.mybatis.controller.UploadController2.uploadSuccess2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:26:22,710  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess2 was upload-controller-2
+2018-04-04 17:26:22,711  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess2 was upload-controller-2
+2018-04-04 17:26:22,746  INFO Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-04-04 17:26:22,754  INFO Http11NioProtocol:180 - Starting ProtocolHandler ["http-nio-8080"]
+2018-04-04 17:26:22,766  INFO NioSelectorPool:180 - Using a shared selector for servlet write/read
+2018-04-04 17:26:22,787  INFO TomcatEmbeddedServletContainer:162 - Tomcat started on port(s): 8080 (http)
+2018-04-04 17:26:22,794  INFO ApplicationDemo:57 - Started ApplicationDemo in 5.918 seconds (JVM running for 6.316)
+2018-04-04 17:26:30,114  INFO [/]:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-04 17:26:30,115  INFO DispatcherServlet:488 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-04 17:26:30,129  INFO DispatcherServlet:507 - FrameworkServlet 'dispatcherServlet': initialization completed in 14 ms
+2018-04-04 17:26:30,156  INFO WebLogAspect:32 - URL : http://localhost:8080/index3
+2018-04-04 17:26:30,157  INFO WebLogAspect:33 - HTTP_METHOD : GET
+2018-04-04 17:26:30,157  INFO WebLogAspect:34 - IP : 0:0:0:0:0:0:0:1
+2018-04-04 17:26:30,158  INFO WebLogAspect:35 - CLASS_METHOD : com.yang.test.controller.ThmeleafController.index
+2018-04-04 17:26:30,158  INFO WebLogAspect:36 - ARGS : [{}]
+2018-04-04 17:26:30,162  INFO WebLogAspect:43 - RESPONSE : index
+2018-04-04 17:26:30,180  INFO TemplateEngine:825 - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-04-04 17:26:30,229  INFO AbstractTemplateResolver:99 - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+2018-04-04 17:26:30,230  INFO AbstractTemplateResolver:110 - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-04-04 17:26:30,230  INFO AbstractMessageResolver:72 - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-04-04 17:26:30,230  INFO AbstractMessageResolver:78 - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-04-04 17:26:30,235  INFO CONFIG:123 - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-04-04 17:26:30,235  INFO TemplateEngine:838 - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-04-04 17:27:17,789  INFO AnnotationConfigEmbeddedWebApplicationContext:960 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e0ceff8: startup date [Wed Apr 04 17:26:17 CST 2018]; root of context hierarchy
+2018-04-04 17:27:17,802  WARN DisposableBeanAdapter:271 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2018-04-04 17:27:17,803  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-04-04 17:27:18,079  INFO ApplicationDemo:48 - Starting ApplicationDemo on 6BWVWTX1WV1IG38 with PID 9728 (D:\workspace\springboot\target\classes started by Administrator in D:\workspace\springboot)
+2018-04-04 17:27:18,080 DEBUG ApplicationDemo:51 - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2018-04-04 17:27:18,080  INFO ApplicationDemo:666 - No active profile set, falling back to default profiles: default
+2018-04-04 17:27:18,082  INFO AnnotationConfigEmbeddedWebApplicationContext:578 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@58e2ef65: startup date [Wed Apr 04 17:27:18 CST 2018]; root of context hierarchy
+2018-04-04 17:27:18,817  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5a8c9a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-04 17:27:18,870  INFO TomcatEmbeddedServletContainer:81 - Tomcat initialized with port(s): 8080 (http)
+2018-04-04 17:27:18,871  INFO StandardService:180 - Starting service Tomcat
+2018-04-04 17:27:18,871  INFO StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.0.32
+2018-04-04 17:27:18,882  INFO [/]:180 - Initializing Spring embedded WebApplicationContext
+2018-04-04 17:27:18,882  INFO ContextLoader:272 - Root WebApplicationContext: initialization completed in 800 ms
+2018-04-04 17:27:18,985  INFO ServletRegistrationBean:189 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-04 17:27:18,988  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-04 17:27:18,988  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-04 17:27:18,988  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-04 17:27:18,988  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-04 17:27:19,300  INFO RequestMappingHandlerMapping:534 - Mapped "{[/yang]}" onto java.lang.String com.yang.test.ApplicationDemo.home()
+2018-04-04 17:27:19,301  INFO RequestMappingHandlerMapping:534 - Mapped "{[/index3],methods=[GET]}" onto java.lang.String com.yang.test.controller.ThmeleafController.index(org.springframework.ui.ModelMap)
+2018-04-04 17:27:19,302  INFO RequestMappingHandlerMapping:534 - Mapped "{[/data/mybatis/author],methods=[POST]}" onto public void com.yang.test.mybatis.controller.AuthorMybatisController.add(com.alibaba.fastjson.JSONObject)
+2018-04-04 17:27:19,303  INFO RequestMappingHandlerMapping:534 - Mapped "{[/data/mybatis/author/{userId:\d+}],methods=[PUT]}" onto public void com.yang.test.mybatis.controller.AuthorMybatisController.update(java.lang.Long,com.alibaba.fastjson.JSONObject)
+2018-04-04 17:27:19,303  INFO RequestMappingHandlerMapping:534 - Mapped "{[/data/mybatis/author/{userId:\d+}],methods=[DELETE]}" onto public void com.yang.test.mybatis.controller.AuthorMybatisController.delete(java.lang.Long)
+2018-04-04 17:27:19,303  INFO RequestMappingHandlerMapping:534 - Mapped "{[/data/mybatis/author],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.yang.test.mybatis.controller.AuthorMybatisController.getAuthorList(javax.servlet.http.HttpServletRequest)
+2018-04-04 17:27:19,303  INFO RequestMappingHandlerMapping:534 - Mapped "{[/data/mybatis/author/{userId:\d+}],methods=[GET]}" onto public com.yang.test.mybatis.entity.Author com.yang.test.mybatis.controller.AuthorMybatisController.getAuthor(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2018-04-04 17:27:19,304  INFO RequestMappingHandlerMapping:534 - Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController.index()
+2018-04-04 17:27:19,304  INFO RequestMappingHandlerMapping:534 - Mapped "{[/upload],methods=[POST]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController.singleFileUpload(org.springframework.web.multipart.MultipartFile,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-04-04 17:27:19,305  INFO RequestMappingHandlerMapping:534 - Mapped "{[/success],methods=[GET]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController.uploadSuccess()
+2018-04-04 17:27:19,305  INFO RequestMappingHandlerMapping:534 - Mapped "{[/index2],methods=[GET]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController2.index2()
+2018-04-04 17:27:19,306  INFO RequestMappingHandlerMapping:534 - Mapped "{[/upload2],methods=[POST]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController2.singleFileUpload2(org.springframework.web.multipart.MultipartFile,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-04-04 17:27:19,306  INFO RequestMappingHandlerMapping:534 - Mapped "{[/success2],methods=[GET]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController2.uploadSuccess2()
+2018-04-04 17:27:19,307  INFO RequestMappingHandlerMapping:534 - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-04-04 17:27:19,308  INFO RequestMappingHandlerMapping:534 - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-04-04 17:27:19,308  INFO RequestMappingHandlerMapping:534 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-04-04 17:27:19,309  INFO RequestMappingHandlerMapping:534 - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-04-04 17:27:19,310  INFO RequestMappingHandlerMapping:534 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-04 17:27:19,310  INFO RequestMappingHandlerMapping:534 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-04 17:27:19,383  INFO RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@58e2ef65: startup date [Wed Apr 04 17:27:18 CST 2018]; root of context hierarchy
+2018-04-04 17:27:19,394  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 17:27:19,395  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 17:27:19,403  INFO ExceptionHandlerExceptionResolver:267 - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-04-04 17:27:19,410  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 17:27:19,495  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-04-04 17:27:19,529  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-04-04 17:27:19,540  INFO DocumentationPluginsBootstrapper:80 - Context refreshed
+2018-04-04 17:27:19,542  INFO DocumentationPluginsBootstrapper:83 - Found {0} custom documentation plugin(s)
+2018-04-04 17:27:19,544  INFO ApiListingReferenceScanner:53 - Scanning for api listing references
+2018-04-04 17:27:19,544  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method update was author-mybatis-controller
+2018-04-04 17:27:19,546  INFO ApiListingReferenceScanner:72 - Request mapping: update belongs to groups: [[ResourceGroup{groupName='author-mybatis-controller', position=0, controller=com.yang.test.mybatis.controller.AuthorMybatisController}]] 
+2018-04-04 17:27:19,546  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method delete was author-mybatis-controller
+2018-04-04 17:27:19,546  INFO ApiListingReferenceScanner:72 - Request mapping: delete belongs to groups: [[ResourceGroup{groupName='author-mybatis-controller', position=0, controller=com.yang.test.mybatis.controller.AuthorMybatisController}]] 
+2018-04-04 17:27:19,547  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthor was author-mybatis-controller
+2018-04-04 17:27:19,547  INFO ApiListingReferenceScanner:72 - Request mapping: getAuthor belongs to groups: [[ResourceGroup{groupName='author-mybatis-controller', position=0, controller=com.yang.test.mybatis.controller.AuthorMybatisController}]] 
+2018-04-04 17:27:19,548  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method add was author-mybatis-controller
+2018-04-04 17:27:19,548  INFO ApiListingReferenceScanner:72 - Request mapping: add belongs to groups: [[ResourceGroup{groupName='author-mybatis-controller', position=0, controller=com.yang.test.mybatis.controller.AuthorMybatisController}]] 
+2018-04-04 17:27:19,548  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthorList was author-mybatis-controller
+2018-04-04 17:27:19,549  INFO ApiListingReferenceScanner:72 - Request mapping: getAuthorList belongs to groups: [[ResourceGroup{groupName='author-mybatis-controller', position=0, controller=com.yang.test.mybatis.controller.AuthorMybatisController}]] 
+2018-04-04 17:27:19,549  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index2 was upload-controller-2
+2018-04-04 17:27:19,549  INFO ApiListingReferenceScanner:72 - Request mapping: index2 belongs to groups: [[ResourceGroup{groupName='upload-controller-2', position=0, controller=com.yang.test.mybatis.controller.UploadController2}]] 
+2018-04-04 17:27:19,550  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was thmeleaf-controller
+2018-04-04 17:27:19,550  INFO ApiListingReferenceScanner:72 - Request mapping: index belongs to groups: [[ResourceGroup{groupName='thmeleaf-controller', position=0, controller=com.yang.test.controller.ThmeleafController}]] 
+2018-04-04 17:27:19,550  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was upload-controller
+2018-04-04 17:27:19,551  INFO ApiListingReferenceScanner:72 - Request mapping: index belongs to groups: [[ResourceGroup{groupName='upload-controller', position=0, controller=com.yang.test.mybatis.controller.UploadController}]] 
+2018-04-04 17:27:19,551  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess2 was upload-controller-2
+2018-04-04 17:27:19,551  INFO ApiListingReferenceScanner:72 - Request mapping: uploadSuccess2 belongs to groups: [[ResourceGroup{groupName='upload-controller-2', position=0, controller=com.yang.test.mybatis.controller.UploadController2}]] 
+2018-04-04 17:27:19,552  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess was upload-controller
+2018-04-04 17:27:19,552  INFO ApiListingReferenceScanner:72 - Request mapping: uploadSuccess belongs to groups: [[ResourceGroup{groupName='upload-controller', position=0, controller=com.yang.test.mybatis.controller.UploadController}]] 
+2018-04-04 17:27:19,552  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload2 was upload-controller-2
+2018-04-04 17:27:19,553  INFO ApiListingReferenceScanner:72 - Request mapping: singleFileUpload2 belongs to groups: [[ResourceGroup{groupName='upload-controller-2', position=0, controller=com.yang.test.mybatis.controller.UploadController2}]] 
+2018-04-04 17:27:19,553  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload was upload-controller
+2018-04-04 17:27:19,553  INFO ApiListingReferenceScanner:72 - Request mapping: singleFileUpload belongs to groups: [[ResourceGroup{groupName='upload-controller', position=0, controller=com.yang.test.mybatis.controller.UploadController}]] 
+2018-04-04 17:27:19,554  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:19,554  INFO ApiListingReferenceScanner:72 - Request mapping: home belongs to groups: [[ResourceGroup{groupName='application-demo', position=0, controller=com.yang.test.ApplicationDemo}]] 
+2018-04-04 17:27:19,554  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/upload-controller Description: upload-controller Position: 0
+2018-04-04 17:27:19,555  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/application-demo Description: application-demo Position: 0
+2018-04-04 17:27:19,555  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/author-mybatis-controller Description: author-mybatis-controller Position: 0
+2018-04-04 17:27:19,556  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/thmeleaf-controller Description: thmeleaf-controller Position: 0
+2018-04-04 17:27:19,556  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/upload-controller-2 Description: upload-controller-2 Position: 0
+2018-04-04 17:27:19,557  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:19,558  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:27:19,573  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:19,574  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:27:19,581  INFO OperationsKeyGenerator:51 - Cache key generated: /yang.com.yang.test.ApplicationDemo.home.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,581  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /yang.com.yang.test.ApplicationDemo.home.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,587  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:19,588  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:19,588  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:19,589  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:19,589  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:19,590  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:19,591  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:19,591  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:19,594  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:19,595  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:19,596  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:19,596  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:19,597  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:19,598  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:19,598  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:19,599  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:19,603  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:27:19,603  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:27:19,603  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:27:19,603  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:27:19,604  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:27:19,605  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:27:19,606  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:27:19,606  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.Void(true)
+2018-04-04 17:27:19,606  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:27:19,606  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+2018-04-04 17:27:19,607  INFO OperationsKeyGenerator:51 - Cache key generated: /data/mybatis/author.com.yang.test.mybatis.controller.AuthorMybatisController.add.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,607  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /data/mybatis/author.com.yang.test.mybatis.controller.AuthorMybatisController.add.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,609  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method add was author-mybatis-controller
+2018-04-04 17:27:19,610  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method add was author-mybatis-controller
+2018-04-04 17:27:19,611  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:27:19,611  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.Void(true)
+2018-04-04 17:27:19,611  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:27:19,611  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+2018-04-04 17:27:19,612  INFO OperationsKeyGenerator:51 - Cache key generated: /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.delete.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,612  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.delete.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,613  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method delete was author-mybatis-controller
+2018-04-04 17:27:19,614  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method delete was author-mybatis-controller
+2018-04-04 17:27:19,615  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:27:19,615  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:27:19,616  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:27:19,616  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:27:19,619  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:27:19,619  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:27:19,620  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:27:19,620  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:27:19,620  INFO OperationsKeyGenerator:51 - Cache key generated: /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.getAuthor.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,620  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.getAuthor.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,622  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthor was author-mybatis-controller
+2018-04-04 17:27:19,627  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthor was author-mybatis-controller
+2018-04-04 17:27:19,628  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Object(true)
+2018-04-04 17:27:19,628  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.Object(true)
+2018-04-04 17:27:19,628  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Object(true)
+2018-04-04 17:27:19,629  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.Object(true)
+2018-04-04 17:27:19,629  INFO OperationsKeyGenerator:51 - Cache key generated: /data/mybatis/author.com.yang.test.mybatis.controller.AuthorMybatisController.getAuthorList.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,629  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /data/mybatis/author.com.yang.test.mybatis.controller.AuthorMybatisController.getAuthorList.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,630  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthorList was author-mybatis-controller
+2018-04-04 17:27:19,632  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthorList was author-mybatis-controller
+2018-04-04 17:27:19,634  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:27:19,634  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:27:19,634  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:27:19,634  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:27:19,635  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:27:19,635  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.Void(true)
+2018-04-04 17:27:19,635  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:27:19,635  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+2018-04-04 17:27:19,635  INFO OperationsKeyGenerator:51 - Cache key generated: /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.update.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,635  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.update.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,637  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method update was author-mybatis-controller
+2018-04-04 17:27:19,638  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method update was author-mybatis-controller
+2018-04-04 17:27:19,640  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:19,640  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:27:19,640  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:19,640  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:27:19,641  INFO OperationsKeyGenerator:51 - Cache key generated: /index3.com.yang.test.controller.ThmeleafController.index.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,641  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /index3.com.yang.test.controller.ThmeleafController.index.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,642  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was thmeleaf-controller
+2018-04-04 17:27:19,643  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was thmeleaf-controller
+2018-04-04 17:27:19,644  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:19,644  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:27:19,645  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:19,645  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:27:19,645  INFO OperationsKeyGenerator:51 - Cache key generated: /index.com.yang.test.mybatis.controller.UploadController.index.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,646  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /index.com.yang.test.mybatis.controller.UploadController.index.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,647  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was upload-controller
+2018-04-04 17:27:19,648  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was upload-controller
+2018-04-04 17:27:19,650  INFO CachingOperationNameGenerator:40 - Generating unique operation named: indexUsingGET_1
+2018-04-04 17:27:19,651  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:19,651  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:27:19,651  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:19,652  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:27:19,652  INFO OperationsKeyGenerator:51 - Cache key generated: /upload.com.yang.test.mybatis.controller.UploadController.singleFileUpload.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,652  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /upload.com.yang.test.mybatis.controller.UploadController.singleFileUpload.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,654  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload was upload-controller
+2018-04-04 17:27:19,655  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload was upload-controller
+2018-04-04 17:27:19,655  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:19,656  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:27:19,656  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:19,656  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:27:19,656  INFO OperationsKeyGenerator:51 - Cache key generated: /success.com.yang.test.mybatis.controller.UploadController.uploadSuccess.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,656  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /success.com.yang.test.mybatis.controller.UploadController.uploadSuccess.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,657  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess was upload-controller
+2018-04-04 17:27:19,657  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess was upload-controller
+2018-04-04 17:27:19,659  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:19,659  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:27:19,659  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:19,659  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:27:19,659  INFO OperationsKeyGenerator:51 - Cache key generated: /index2.com.yang.test.mybatis.controller.UploadController2.index2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,660  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /index2.com.yang.test.mybatis.controller.UploadController2.index2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,660  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index2 was upload-controller-2
+2018-04-04 17:27:19,661  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index2 was upload-controller-2
+2018-04-04 17:27:19,662  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:19,662  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:27:19,663  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:19,663  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:27:19,664  INFO OperationsKeyGenerator:51 - Cache key generated: /upload2.com.yang.test.mybatis.controller.UploadController2.singleFileUpload2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,664  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /upload2.com.yang.test.mybatis.controller.UploadController2.singleFileUpload2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,666  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload2 was upload-controller-2
+2018-04-04 17:27:19,666  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload2 was upload-controller-2
+2018-04-04 17:27:19,667  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:19,668  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:27:19,668  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:19,668  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:27:19,668  INFO OperationsKeyGenerator:51 - Cache key generated: /success2.com.yang.test.mybatis.controller.UploadController2.uploadSuccess2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,668  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /success2.com.yang.test.mybatis.controller.UploadController2.uploadSuccess2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:19,669  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess2 was upload-controller-2
+2018-04-04 17:27:19,670  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess2 was upload-controller-2
+2018-04-04 17:27:19,671  INFO Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-04-04 17:27:19,671  INFO Http11NioProtocol:180 - Starting ProtocolHandler ["http-nio-8080"]
+2018-04-04 17:27:19,674  INFO NioSelectorPool:180 - Using a shared selector for servlet write/read
+2018-04-04 17:27:19,677  INFO TomcatEmbeddedServletContainer:162 - Tomcat started on port(s): 8080 (http)
+2018-04-04 17:27:19,680  INFO ApplicationDemo:57 - Started ApplicationDemo in 1.654 seconds (JVM running for 63.2)
+2018-04-04 17:27:19,872  INFO [/]:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-04 17:27:19,872  INFO DispatcherServlet:488 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-04 17:27:19,877  INFO DispatcherServlet:507 - FrameworkServlet 'dispatcherServlet': initialization completed in 4 ms
+2018-04-04 17:27:19,880  INFO TemplateEngine:825 - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-04-04 17:27:19,882  INFO AbstractTemplateResolver:99 - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+2018-04-04 17:27:19,884  INFO AbstractTemplateResolver:110 - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-04-04 17:27:19,884  INFO AbstractMessageResolver:72 - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-04-04 17:27:19,885  INFO AbstractMessageResolver:78 - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-04-04 17:27:19,885  INFO CONFIG:123 - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * XML
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-04-04 17:27:19,886  INFO TemplateEngine:838 - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-04-04 17:27:34,241  INFO ApplicationDemo:48 - Starting ApplicationDemo on 6BWVWTX1WV1IG38 with PID 3604 (D:\workspace\springboot\target\classes started by Administrator in D:\workspace\springboot)
+2018-04-04 17:27:34,244 DEBUG ApplicationDemo:51 - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2018-04-04 17:27:34,244  INFO ApplicationDemo:666 - No active profile set, falling back to default profiles: default
+2018-04-04 17:27:34,453  INFO Version:30 - HV000001: Hibernate Validator 5.2.4.Final
+2018-04-04 17:27:34,540  INFO AnnotationConfigEmbeddedWebApplicationContext:578 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@693c0772: startup date [Wed Apr 04 17:27:34 CST 2018]; root of context hierarchy
+2018-04-04 17:27:36,414  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e7621b22] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-04 17:27:37,079  INFO TomcatEmbeddedServletContainer:81 - Tomcat initialized with port(s): 8080 (http)
+2018-04-04 17:27:37,093  INFO StandardService:180 - Starting service Tomcat
+2018-04-04 17:27:37,094  INFO StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.0.32
+2018-04-04 17:27:37,201  INFO [/]:180 - Initializing Spring embedded WebApplicationContext
+2018-04-04 17:27:37,202  INFO ContextLoader:272 - Root WebApplicationContext: initialization completed in 2665 ms
+2018-04-04 17:27:37,467  INFO ServletRegistrationBean:189 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-04 17:27:37,472  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-04 17:27:37,473  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-04 17:27:37,473  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-04 17:27:37,473  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-04 17:27:38,227  INFO CglibAopProxy:270 - Unable to proxy method [java.util.List springfox.documentation.schema.property.OptimizedModelPropertiesProvider.candidateProperties(com.fasterxml.classmate.ResolvedType,com.fasterxml.jackson.databind.introspect.AnnotatedMember,com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition,springfox.documentation.spi.schema.contexts.ModelContext)] because it is package-visible across different ClassLoaders: All calls to this method via a proxy will NOT be routed to the target instance.
+2018-04-04 17:27:38,392  INFO RequestMappingHandlerMapping:534 - Mapped "{[/yang]}" onto java.lang.String com.yang.test.ApplicationDemo.home()
+2018-04-04 17:27:38,394  INFO RequestMappingHandlerMapping:534 - Mapped "{[/index3],methods=[GET]}" onto java.lang.String com.yang.test.controller.ThmeleafController.index(org.springframework.ui.ModelMap)
+2018-04-04 17:27:38,397  INFO RequestMappingHandlerMapping:534 - Mapped "{[/data/mybatis/author],methods=[POST]}" onto public void com.yang.test.mybatis.controller.AuthorMybatisController.add(com.alibaba.fastjson.JSONObject)
+2018-04-04 17:27:38,397  INFO RequestMappingHandlerMapping:534 - Mapped "{[/data/mybatis/author/{userId:\d+}],methods=[PUT]}" onto public void com.yang.test.mybatis.controller.AuthorMybatisController.update(java.lang.Long,com.alibaba.fastjson.JSONObject)
+2018-04-04 17:27:38,398  INFO RequestMappingHandlerMapping:534 - Mapped "{[/data/mybatis/author/{userId:\d+}],methods=[DELETE]}" onto public void com.yang.test.mybatis.controller.AuthorMybatisController.delete(java.lang.Long)
+2018-04-04 17:27:38,399  INFO RequestMappingHandlerMapping:534 - Mapped "{[/data/mybatis/author],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.yang.test.mybatis.controller.AuthorMybatisController.getAuthorList(javax.servlet.http.HttpServletRequest)
+2018-04-04 17:27:38,399  INFO RequestMappingHandlerMapping:534 - Mapped "{[/data/mybatis/author/{userId:\d+}],methods=[GET]}" onto public com.yang.test.mybatis.entity.Author com.yang.test.mybatis.controller.AuthorMybatisController.getAuthor(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2018-04-04 17:27:38,401  INFO RequestMappingHandlerMapping:534 - Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController.index()
+2018-04-04 17:27:38,401  INFO RequestMappingHandlerMapping:534 - Mapped "{[/upload],methods=[POST]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController.singleFileUpload(org.springframework.web.multipart.MultipartFile,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-04-04 17:27:38,402  INFO RequestMappingHandlerMapping:534 - Mapped "{[/success],methods=[GET]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController.uploadSuccess()
+2018-04-04 17:27:38,404  INFO RequestMappingHandlerMapping:534 - Mapped "{[/index2],methods=[GET]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController2.index2()
+2018-04-04 17:27:38,405  INFO RequestMappingHandlerMapping:534 - Mapped "{[/success2],methods=[GET]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController2.uploadSuccess2()
+2018-04-04 17:27:38,405  INFO RequestMappingHandlerMapping:534 - Mapped "{[/upload2],methods=[POST]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController2.singleFileUpload2(org.springframework.web.multipart.MultipartFile,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-04-04 17:27:38,406  INFO RequestMappingHandlerMapping:534 - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-04-04 17:27:38,409  INFO RequestMappingHandlerMapping:534 - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-04-04 17:27:38,410  INFO RequestMappingHandlerMapping:534 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-04-04 17:27:38,411  INFO RequestMappingHandlerMapping:534 - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-04-04 17:27:38,413  INFO RequestMappingHandlerMapping:534 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-04 17:27:38,414  INFO RequestMappingHandlerMapping:534 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-04 17:27:38,614  INFO RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@693c0772: startup date [Wed Apr 04 17:27:34 CST 2018]; root of context hierarchy
+2018-04-04 17:27:38,663  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 17:27:38,663  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 17:27:38,678  INFO ExceptionHandlerExceptionResolver:267 - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-04-04 17:27:38,699  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 17:27:39,166  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-04-04 17:27:39,213  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-04-04 17:27:39,225  INFO DocumentationPluginsBootstrapper:80 - Context refreshed
+2018-04-04 17:27:39,252  INFO DocumentationPluginsBootstrapper:83 - Found {0} custom documentation plugin(s)
+2018-04-04 17:27:39,261  INFO ApiListingReferenceScanner:53 - Scanning for api listing references
+2018-04-04 17:27:39,266  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method update was author-mybatis-controller
+2018-04-04 17:27:39,269  INFO ApiListingReferenceScanner:72 - Request mapping: update belongs to groups: [[ResourceGroup{groupName='author-mybatis-controller', position=0, controller=com.yang.test.mybatis.controller.AuthorMybatisController}]] 
+2018-04-04 17:27:39,270  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method delete was author-mybatis-controller
+2018-04-04 17:27:39,270  INFO ApiListingReferenceScanner:72 - Request mapping: delete belongs to groups: [[ResourceGroup{groupName='author-mybatis-controller', position=0, controller=com.yang.test.mybatis.controller.AuthorMybatisController}]] 
+2018-04-04 17:27:39,271  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthor was author-mybatis-controller
+2018-04-04 17:27:39,271  INFO ApiListingReferenceScanner:72 - Request mapping: getAuthor belongs to groups: [[ResourceGroup{groupName='author-mybatis-controller', position=0, controller=com.yang.test.mybatis.controller.AuthorMybatisController}]] 
+2018-04-04 17:27:39,272  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method add was author-mybatis-controller
+2018-04-04 17:27:39,272  INFO ApiListingReferenceScanner:72 - Request mapping: add belongs to groups: [[ResourceGroup{groupName='author-mybatis-controller', position=0, controller=com.yang.test.mybatis.controller.AuthorMybatisController}]] 
+2018-04-04 17:27:39,273  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthorList was author-mybatis-controller
+2018-04-04 17:27:39,273  INFO ApiListingReferenceScanner:72 - Request mapping: getAuthorList belongs to groups: [[ResourceGroup{groupName='author-mybatis-controller', position=0, controller=com.yang.test.mybatis.controller.AuthorMybatisController}]] 
+2018-04-04 17:27:39,274  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index2 was upload-controller-2
+2018-04-04 17:27:39,274  INFO ApiListingReferenceScanner:72 - Request mapping: index2 belongs to groups: [[ResourceGroup{groupName='upload-controller-2', position=0, controller=com.yang.test.mybatis.controller.UploadController2}]] 
+2018-04-04 17:27:39,275  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was thmeleaf-controller
+2018-04-04 17:27:39,276  INFO ApiListingReferenceScanner:72 - Request mapping: index belongs to groups: [[ResourceGroup{groupName='thmeleaf-controller', position=0, controller=com.yang.test.controller.ThmeleafController}]] 
+2018-04-04 17:27:39,277  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was upload-controller
+2018-04-04 17:27:39,277  INFO ApiListingReferenceScanner:72 - Request mapping: index belongs to groups: [[ResourceGroup{groupName='upload-controller', position=0, controller=com.yang.test.mybatis.controller.UploadController}]] 
+2018-04-04 17:27:39,278  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess2 was upload-controller-2
+2018-04-04 17:27:39,278  INFO ApiListingReferenceScanner:72 - Request mapping: uploadSuccess2 belongs to groups: [[ResourceGroup{groupName='upload-controller-2', position=0, controller=com.yang.test.mybatis.controller.UploadController2}]] 
+2018-04-04 17:27:39,279  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess was upload-controller
+2018-04-04 17:27:39,279  INFO ApiListingReferenceScanner:72 - Request mapping: uploadSuccess belongs to groups: [[ResourceGroup{groupName='upload-controller', position=0, controller=com.yang.test.mybatis.controller.UploadController}]] 
+2018-04-04 17:27:39,279  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload2 was upload-controller-2
+2018-04-04 17:27:39,280  INFO ApiListingReferenceScanner:72 - Request mapping: singleFileUpload2 belongs to groups: [[ResourceGroup{groupName='upload-controller-2', position=0, controller=com.yang.test.mybatis.controller.UploadController2}]] 
+2018-04-04 17:27:39,280  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload was upload-controller
+2018-04-04 17:27:39,280  INFO ApiListingReferenceScanner:72 - Request mapping: singleFileUpload belongs to groups: [[ResourceGroup{groupName='upload-controller', position=0, controller=com.yang.test.mybatis.controller.UploadController}]] 
+2018-04-04 17:27:39,281  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:39,281  INFO ApiListingReferenceScanner:72 - Request mapping: home belongs to groups: [[ResourceGroup{groupName='application-demo', position=0, controller=com.yang.test.ApplicationDemo}]] 
+2018-04-04 17:27:39,285  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/upload-controller-2 Description: upload-controller-2 Position: 0
+2018-04-04 17:27:39,286  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/thmeleaf-controller Description: thmeleaf-controller Position: 0
+2018-04-04 17:27:39,287  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/upload-controller Description: upload-controller Position: 0
+2018-04-04 17:27:39,289  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/author-mybatis-controller Description: author-mybatis-controller Position: 0
+2018-04-04 17:27:39,290  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/application-demo Description: application-demo Position: 0
+2018-04-04 17:27:39,303  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:39,303  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:27:39,312  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:39,312  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:27:39,321  INFO OperationsKeyGenerator:51 - Cache key generated: /yang.com.yang.test.ApplicationDemo.home.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,321  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /yang.com.yang.test.ApplicationDemo.home.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,332  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:39,336  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:39,340  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:39,341  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:39,342  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:39,343  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:39,344  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:39,344  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:39,345  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:39,346  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:39,347  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:39,348  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:39,349  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:39,350  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:39,351  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:39,352  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:27:39,374  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:27:39,375  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:27:39,375  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:27:39,376  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:27:39,378  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:27:39,378  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:27:39,405  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:27:39,405  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.Void(true)
+2018-04-04 17:27:39,405  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:27:39,406  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+2018-04-04 17:27:39,406  INFO OperationsKeyGenerator:51 - Cache key generated: /data/mybatis/author.com.yang.test.mybatis.controller.AuthorMybatisController.add.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,407  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /data/mybatis/author.com.yang.test.mybatis.controller.AuthorMybatisController.add.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,412  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method add was author-mybatis-controller
+2018-04-04 17:27:39,414  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method add was author-mybatis-controller
+2018-04-04 17:27:39,415  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:27:39,416  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.Void(true)
+2018-04-04 17:27:39,416  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:27:39,416  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+2018-04-04 17:27:39,417  INFO OperationsKeyGenerator:51 - Cache key generated: /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.delete.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,417  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.delete.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,419  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method delete was author-mybatis-controller
+2018-04-04 17:27:39,420  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method delete was author-mybatis-controller
+2018-04-04 17:27:39,422  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:27:39,422  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:27:39,423  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:27:39,423  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:27:39,436  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:27:39,436  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:27:39,437  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:27:39,437  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:27:39,438  INFO OperationsKeyGenerator:51 - Cache key generated: /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.getAuthor.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,439  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.getAuthor.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,440  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthor was author-mybatis-controller
+2018-04-04 17:27:39,447  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthor was author-mybatis-controller
+2018-04-04 17:27:39,453  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Object(true)
+2018-04-04 17:27:39,453  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.Object(true)
+2018-04-04 17:27:39,453  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Object(true)
+2018-04-04 17:27:39,454  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.Object(true)
+2018-04-04 17:27:39,454  INFO OperationsKeyGenerator:51 - Cache key generated: /data/mybatis/author.com.yang.test.mybatis.controller.AuthorMybatisController.getAuthorList.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,455  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /data/mybatis/author.com.yang.test.mybatis.controller.AuthorMybatisController.getAuthorList.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,457  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthorList was author-mybatis-controller
+2018-04-04 17:27:39,460  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthorList was author-mybatis-controller
+2018-04-04 17:27:39,462  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:27:39,463  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:27:39,463  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:27:39,464  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:27:39,464  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:27:39,464  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.Void(true)
+2018-04-04 17:27:39,465  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:27:39,466  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+2018-04-04 17:27:39,466  INFO OperationsKeyGenerator:51 - Cache key generated: /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.update.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,467  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.update.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,469  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method update was author-mybatis-controller
+2018-04-04 17:27:39,471  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method update was author-mybatis-controller
+2018-04-04 17:27:39,473  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:39,473  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:27:39,473  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:39,474  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:27:39,474  INFO OperationsKeyGenerator:51 - Cache key generated: /index3.com.yang.test.controller.ThmeleafController.index.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,474  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /index3.com.yang.test.controller.ThmeleafController.index.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,476  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was thmeleaf-controller
+2018-04-04 17:27:39,477  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was thmeleaf-controller
+2018-04-04 17:27:39,479  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:39,480  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:27:39,480  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:39,480  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:27:39,481  INFO OperationsKeyGenerator:51 - Cache key generated: /index.com.yang.test.mybatis.controller.UploadController.index.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,482  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /index.com.yang.test.mybatis.controller.UploadController.index.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,483  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was upload-controller
+2018-04-04 17:27:39,484  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was upload-controller
+2018-04-04 17:27:39,484  INFO CachingOperationNameGenerator:40 - Generating unique operation named: indexUsingGET_1
+2018-04-04 17:27:39,486  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:39,487  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:27:39,487  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:39,487  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:27:39,488  INFO OperationsKeyGenerator:51 - Cache key generated: /upload.com.yang.test.mybatis.controller.UploadController.singleFileUpload.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,488  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /upload.com.yang.test.mybatis.controller.UploadController.singleFileUpload.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,492  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload was upload-controller
+2018-04-04 17:27:39,493  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload was upload-controller
+2018-04-04 17:27:39,494  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:39,494  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:27:39,495  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:39,495  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:27:39,495  INFO OperationsKeyGenerator:51 - Cache key generated: /success.com.yang.test.mybatis.controller.UploadController.uploadSuccess.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,496  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /success.com.yang.test.mybatis.controller.UploadController.uploadSuccess.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,496  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess was upload-controller
+2018-04-04 17:27:39,497  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess was upload-controller
+2018-04-04 17:27:39,501  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:39,501  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:27:39,502  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:39,504  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:27:39,504  INFO OperationsKeyGenerator:51 - Cache key generated: /index2.com.yang.test.mybatis.controller.UploadController2.index2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,505  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /index2.com.yang.test.mybatis.controller.UploadController2.index2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,506  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index2 was upload-controller-2
+2018-04-04 17:27:39,507  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index2 was upload-controller-2
+2018-04-04 17:27:39,509  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:39,509  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:27:39,509  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:39,510  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:27:39,510  INFO OperationsKeyGenerator:51 - Cache key generated: /upload2.com.yang.test.mybatis.controller.UploadController2.singleFileUpload2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,510  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /upload2.com.yang.test.mybatis.controller.UploadController2.singleFileUpload2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,512  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload2 was upload-controller-2
+2018-04-04 17:27:39,513  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload2 was upload-controller-2
+2018-04-04 17:27:39,514  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:39,515  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:27:39,515  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:27:39,515  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:27:39,516  INFO OperationsKeyGenerator:51 - Cache key generated: /success2.com.yang.test.mybatis.controller.UploadController2.uploadSuccess2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,516  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /success2.com.yang.test.mybatis.controller.UploadController2.uploadSuccess2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:27:39,517  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess2 was upload-controller-2
+2018-04-04 17:27:39,518  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess2 was upload-controller-2
+2018-04-04 17:27:39,550  INFO Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-04-04 17:27:39,558  INFO Http11NioProtocol:180 - Starting ProtocolHandler ["http-nio-8080"]
+2018-04-04 17:27:39,570  INFO NioSelectorPool:180 - Using a shared selector for servlet write/read
+2018-04-04 17:27:39,586  INFO TomcatEmbeddedServletContainer:162 - Tomcat started on port(s): 8080 (http)
+2018-04-04 17:27:39,593  INFO ApplicationDemo:57 - Started ApplicationDemo in 5.671 seconds (JVM running for 6.065)
+2018-04-04 17:27:55,297  INFO [/]:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-04 17:27:55,297  INFO DispatcherServlet:488 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-04 17:27:55,321  INFO DispatcherServlet:507 - FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-04-04 17:27:55,369  INFO TemplateEngine:825 - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-04-04 17:27:55,409  INFO AbstractTemplateResolver:99 - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+2018-04-04 17:27:55,409  INFO AbstractTemplateResolver:110 - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-04-04 17:27:55,409  INFO AbstractMessageResolver:72 - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-04-04 17:27:55,410  INFO AbstractMessageResolver:78 - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-04-04 17:27:55,414  INFO CONFIG:123 - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-04-04 17:27:55,414  INFO TemplateEngine:838 - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
+2018-04-04 17:28:19,256  INFO AnnotationConfigEmbeddedWebApplicationContext:960 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@693c0772: startup date [Wed Apr 04 17:27:34 CST 2018]; root of context hierarchy
+2018-04-04 17:28:19,262  WARN DisposableBeanAdapter:271 - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2018-04-04 17:28:19,264  INFO AnnotationMBeanExporter:449 - Unregistering JMX-exposed beans on shutdown
+2018-04-04 17:28:19,591  INFO ApplicationDemo:48 - Starting ApplicationDemo on 6BWVWTX1WV1IG38 with PID 3604 (D:\workspace\springboot\target\classes started by Administrator in D:\workspace\springboot)
+2018-04-04 17:28:19,592 DEBUG ApplicationDemo:51 - Running with Spring Boot v1.3.3.RELEASE, Spring v4.2.5.RELEASE
+2018-04-04 17:28:19,592  INFO ApplicationDemo:666 - No active profile set, falling back to default profiles: default
+2018-04-04 17:28:19,595  INFO AnnotationConfigEmbeddedWebApplicationContext:578 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c3acd9e: startup date [Wed Apr 04 17:28:19 CST 2018]; root of context hierarchy
+2018-04-04 17:28:20,391  INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker:328 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e7621b22] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-04-04 17:28:20,437  INFO TomcatEmbeddedServletContainer:81 - Tomcat initialized with port(s): 8080 (http)
+2018-04-04 17:28:20,438  INFO StandardService:180 - Starting service Tomcat
+2018-04-04 17:28:20,438  INFO StandardEngine:180 - Starting Servlet Engine: Apache Tomcat/8.0.32
+2018-04-04 17:28:20,458  INFO [/]:180 - Initializing Spring embedded WebApplicationContext
+2018-04-04 17:28:20,459  INFO ContextLoader:272 - Root WebApplicationContext: initialization completed in 864 ms
+2018-04-04 17:28:20,546  INFO ServletRegistrationBean:189 - Mapping servlet: 'dispatcherServlet' to [/]
+2018-04-04 17:28:20,547  INFO FilterRegistrationBean:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-04 17:28:20,547  INFO FilterRegistrationBean:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-04 17:28:20,548  INFO FilterRegistrationBean:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-04 17:28:20,548  INFO FilterRegistrationBean:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-04 17:28:20,849  INFO RequestMappingHandlerMapping:534 - Mapped "{[/yang]}" onto java.lang.String com.yang.test.ApplicationDemo.home()
+2018-04-04 17:28:20,850  INFO RequestMappingHandlerMapping:534 - Mapped "{[/index3],methods=[GET]}" onto public java.lang.String com.yang.test.controller.ThmeleafController.index(org.springframework.ui.ModelMap)
+2018-04-04 17:28:20,851  INFO RequestMappingHandlerMapping:534 - Mapped "{[/data/mybatis/author],methods=[POST]}" onto public void com.yang.test.mybatis.controller.AuthorMybatisController.add(com.alibaba.fastjson.JSONObject)
+2018-04-04 17:28:20,852  INFO RequestMappingHandlerMapping:534 - Mapped "{[/data/mybatis/author/{userId:\d+}],methods=[PUT]}" onto public void com.yang.test.mybatis.controller.AuthorMybatisController.update(java.lang.Long,com.alibaba.fastjson.JSONObject)
+2018-04-04 17:28:20,852  INFO RequestMappingHandlerMapping:534 - Mapped "{[/data/mybatis/author/{userId:\d+}],methods=[DELETE]}" onto public void com.yang.test.mybatis.controller.AuthorMybatisController.delete(java.lang.Long)
+2018-04-04 17:28:20,853  INFO RequestMappingHandlerMapping:534 - Mapped "{[/data/mybatis/author],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.yang.test.mybatis.controller.AuthorMybatisController.getAuthorList(javax.servlet.http.HttpServletRequest)
+2018-04-04 17:28:20,853  INFO RequestMappingHandlerMapping:534 - Mapped "{[/data/mybatis/author/{userId:\d+}],methods=[GET]}" onto public com.yang.test.mybatis.entity.Author com.yang.test.mybatis.controller.AuthorMybatisController.getAuthor(java.lang.Long,javax.servlet.http.HttpServletRequest)
+2018-04-04 17:28:20,854  INFO RequestMappingHandlerMapping:534 - Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController.index()
+2018-04-04 17:28:20,854  INFO RequestMappingHandlerMapping:534 - Mapped "{[/upload],methods=[POST]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController.singleFileUpload(org.springframework.web.multipart.MultipartFile,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-04-04 17:28:20,855  INFO RequestMappingHandlerMapping:534 - Mapped "{[/success],methods=[GET]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController.uploadSuccess()
+2018-04-04 17:28:20,856  INFO RequestMappingHandlerMapping:534 - Mapped "{[/index2],methods=[GET]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController2.index2()
+2018-04-04 17:28:20,856  INFO RequestMappingHandlerMapping:534 - Mapped "{[/success2],methods=[GET]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController2.uploadSuccess2()
+2018-04-04 17:28:20,856  INFO RequestMappingHandlerMapping:534 - Mapped "{[/upload2],methods=[POST]}" onto public java.lang.String com.yang.test.mybatis.controller.UploadController2.singleFileUpload2(org.springframework.web.multipart.MultipartFile,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2018-04-04 17:28:20,857  INFO RequestMappingHandlerMapping:534 - Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-04-04 17:28:20,859  INFO RequestMappingHandlerMapping:534 - Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-04-04 17:28:20,859  INFO RequestMappingHandlerMapping:534 - Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-04-04 17:28:20,860  INFO RequestMappingHandlerMapping:534 - Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-04-04 17:28:20,861  INFO RequestMappingHandlerMapping:534 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-04 17:28:20,862  INFO RequestMappingHandlerMapping:534 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-04 17:28:20,936  INFO RequestMappingHandlerAdapter:532 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4c3acd9e: startup date [Wed Apr 04 17:28:19 CST 2018]; root of context hierarchy
+2018-04-04 17:28:20,952  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 17:28:20,952  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 17:28:20,961  INFO ExceptionHandlerExceptionResolver:267 - Detected @ExceptionHandler methods in globalExceptionHandler
+2018-04-04 17:28:20,968  INFO SimpleUrlHandlerMapping:341 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-04 17:28:21,056  INFO OptionalLiveReloadServer:58 - LiveReload server is running on port 35729
+2018-04-04 17:28:21,093  INFO AnnotationMBeanExporter:431 - Registering beans for JMX exposure on startup
+2018-04-04 17:28:21,100  INFO DocumentationPluginsBootstrapper:80 - Context refreshed
+2018-04-04 17:28:21,101  INFO DocumentationPluginsBootstrapper:83 - Found {0} custom documentation plugin(s)
+2018-04-04 17:28:21,104  INFO ApiListingReferenceScanner:53 - Scanning for api listing references
+2018-04-04 17:28:21,104  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method update was author-mybatis-controller
+2018-04-04 17:28:21,106  INFO ApiListingReferenceScanner:72 - Request mapping: update belongs to groups: [[ResourceGroup{groupName='author-mybatis-controller', position=0, controller=com.yang.test.mybatis.controller.AuthorMybatisController}]] 
+2018-04-04 17:28:21,107  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method delete was author-mybatis-controller
+2018-04-04 17:28:21,107  INFO ApiListingReferenceScanner:72 - Request mapping: delete belongs to groups: [[ResourceGroup{groupName='author-mybatis-controller', position=0, controller=com.yang.test.mybatis.controller.AuthorMybatisController}]] 
+2018-04-04 17:28:21,108  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthor was author-mybatis-controller
+2018-04-04 17:28:21,108  INFO ApiListingReferenceScanner:72 - Request mapping: getAuthor belongs to groups: [[ResourceGroup{groupName='author-mybatis-controller', position=0, controller=com.yang.test.mybatis.controller.AuthorMybatisController}]] 
+2018-04-04 17:28:21,108  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method add was author-mybatis-controller
+2018-04-04 17:28:21,110  INFO ApiListingReferenceScanner:72 - Request mapping: add belongs to groups: [[ResourceGroup{groupName='author-mybatis-controller', position=0, controller=com.yang.test.mybatis.controller.AuthorMybatisController}]] 
+2018-04-04 17:28:21,110  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthorList was author-mybatis-controller
+2018-04-04 17:28:21,110  INFO ApiListingReferenceScanner:72 - Request mapping: getAuthorList belongs to groups: [[ResourceGroup{groupName='author-mybatis-controller', position=0, controller=com.yang.test.mybatis.controller.AuthorMybatisController}]] 
+2018-04-04 17:28:21,111  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index2 was upload-controller-2
+2018-04-04 17:28:21,111  INFO ApiListingReferenceScanner:72 - Request mapping: index2 belongs to groups: [[ResourceGroup{groupName='upload-controller-2', position=0, controller=com.yang.test.mybatis.controller.UploadController2}]] 
+2018-04-04 17:28:21,112  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was thmeleaf-controller
+2018-04-04 17:28:21,112  INFO ApiListingReferenceScanner:72 - Request mapping: index belongs to groups: [[ResourceGroup{groupName='thmeleaf-controller', position=0, controller=com.yang.test.controller.ThmeleafController}]] 
+2018-04-04 17:28:21,112  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was upload-controller
+2018-04-04 17:28:21,113  INFO ApiListingReferenceScanner:72 - Request mapping: index belongs to groups: [[ResourceGroup{groupName='upload-controller', position=0, controller=com.yang.test.mybatis.controller.UploadController}]] 
+2018-04-04 17:28:21,113  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess2 was upload-controller-2
+2018-04-04 17:28:21,114  INFO ApiListingReferenceScanner:72 - Request mapping: uploadSuccess2 belongs to groups: [[ResourceGroup{groupName='upload-controller-2', position=0, controller=com.yang.test.mybatis.controller.UploadController2}]] 
+2018-04-04 17:28:21,114  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess was upload-controller
+2018-04-04 17:28:21,114  INFO ApiListingReferenceScanner:72 - Request mapping: uploadSuccess belongs to groups: [[ResourceGroup{groupName='upload-controller', position=0, controller=com.yang.test.mybatis.controller.UploadController}]] 
+2018-04-04 17:28:21,115  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload2 was upload-controller-2
+2018-04-04 17:28:21,115  INFO ApiListingReferenceScanner:72 - Request mapping: singleFileUpload2 belongs to groups: [[ResourceGroup{groupName='upload-controller-2', position=0, controller=com.yang.test.mybatis.controller.UploadController2}]] 
+2018-04-04 17:28:21,115  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload was upload-controller
+2018-04-04 17:28:21,115  INFO ApiListingReferenceScanner:72 - Request mapping: singleFileUpload belongs to groups: [[ResourceGroup{groupName='upload-controller', position=0, controller=com.yang.test.mybatis.controller.UploadController}]] 
+2018-04-04 17:28:21,116  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:28:21,116  INFO ApiListingReferenceScanner:72 - Request mapping: home belongs to groups: [[ResourceGroup{groupName='application-demo', position=0, controller=com.yang.test.ApplicationDemo}]] 
+2018-04-04 17:28:21,117  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/upload-controller-2 Description: upload-controller-2 Position: 0
+2018-04-04 17:28:21,118  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/author-mybatis-controller Description: author-mybatis-controller Position: 0
+2018-04-04 17:28:21,118  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/thmeleaf-controller Description: thmeleaf-controller Position: 0
+2018-04-04 17:28:21,118  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/upload-controller Description: upload-controller Position: 0
+2018-04-04 17:28:21,119  INFO ApiListingReferenceScanner:84 - Created resource listing Path: /default/application-demo Description: application-demo Position: 0
+2018-04-04 17:28:21,121  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:28:21,121  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:28:21,127  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:28:21,127  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:28:21,132  INFO OperationsKeyGenerator:51 - Cache key generated: /yang.com.yang.test.ApplicationDemo.home.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,133  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /yang.com.yang.test.ApplicationDemo.home.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,139  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:28:21,140  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:28:21,142  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:28:21,142  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:28:21,143  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:28:21,144  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:28:21,145  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:28:21,146  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:28:21,146  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:28:21,147  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:28:21,148  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:28:21,149  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:28:21,150  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:28:21,151  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:28:21,151  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:28:21,152  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method home was application-demo
+2018-04-04 17:28:21,156  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:28:21,156  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:28:21,156  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:28:21,157  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:28:21,158  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:28:21,158  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:28:21,160  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:28:21,161  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.Void(true)
+2018-04-04 17:28:21,161  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:28:21,161  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+2018-04-04 17:28:21,162  INFO OperationsKeyGenerator:51 - Cache key generated: /data/mybatis/author.com.yang.test.mybatis.controller.AuthorMybatisController.add.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,162  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /data/mybatis/author.com.yang.test.mybatis.controller.AuthorMybatisController.add.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,165  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method add was author-mybatis-controller
+2018-04-04 17:28:21,167  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method add was author-mybatis-controller
+2018-04-04 17:28:21,168  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:28:21,169  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.Void(true)
+2018-04-04 17:28:21,169  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:28:21,169  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+2018-04-04 17:28:21,171  INFO OperationsKeyGenerator:51 - Cache key generated: /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.delete.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,171  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.delete.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,173  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method delete was author-mybatis-controller
+2018-04-04 17:28:21,174  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method delete was author-mybatis-controller
+2018-04-04 17:28:21,176  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:28:21,176  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:28:21,177  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:28:21,177  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:28:21,180  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:28:21,180  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:28:21,180  INFO ModelPropertiesKeyGenerator:48 - Cache key generated: com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:28:21,181  INFO CachingAspect:68 - Caching aspect applied for cache modelProperties with key com.yang.test.mybatis.entity.Author(true)
+2018-04-04 17:28:21,181  INFO OperationsKeyGenerator:51 - Cache key generated: /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.getAuthor.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,181  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.getAuthor.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,183  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthor was author-mybatis-controller
+2018-04-04 17:28:21,187  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthor was author-mybatis-controller
+2018-04-04 17:28:21,188  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Object(true)
+2018-04-04 17:28:21,189  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.Object(true)
+2018-04-04 17:28:21,189  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Object(true)
+2018-04-04 17:28:21,189  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.Object(true)
+2018-04-04 17:28:21,189  INFO OperationsKeyGenerator:51 - Cache key generated: /data/mybatis/author.com.yang.test.mybatis.controller.AuthorMybatisController.getAuthorList.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,190  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /data/mybatis/author.com.yang.test.mybatis.controller.AuthorMybatisController.getAuthorList.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,190  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthorList was author-mybatis-controller
+2018-04-04 17:28:21,192  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method getAuthorList was author-mybatis-controller
+2018-04-04 17:28:21,194  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:28:21,194  INFO CachingAspect:79 - Caching aspect applied for cache models with key com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:28:21,194  INFO ModelContextKeyGenerator:46 - Cache Key Generated: com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:28:21,194  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key com.alibaba.fastjson.JSONObject(false)
+2018-04-04 17:28:21,195  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:28:21,195  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.Void(true)
+2018-04-04 17:28:21,195  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.Void(true)
+2018-04-04 17:28:21,196  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.Void(true)
+2018-04-04 17:28:21,196  INFO OperationsKeyGenerator:51 - Cache key generated: /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.update.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,197  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /data/mybatis/author/{userId:\d+}.com.yang.test.mybatis.controller.AuthorMybatisController.update.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,200  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method update was author-mybatis-controller
+2018-04-04 17:28:21,201  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method update was author-mybatis-controller
+2018-04-04 17:28:21,203  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:28:21,203  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:28:21,203  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:28:21,203  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:28:21,204  INFO OperationsKeyGenerator:51 - Cache key generated: /index3.com.yang.test.controller.ThmeleafController.index.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,204  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /index3.com.yang.test.controller.ThmeleafController.index.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,205  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was thmeleaf-controller
+2018-04-04 17:28:21,205  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was thmeleaf-controller
+2018-04-04 17:28:21,207  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:28:21,207  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:28:21,207  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:28:21,207  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:28:21,208  INFO OperationsKeyGenerator:51 - Cache key generated: /index.com.yang.test.mybatis.controller.UploadController.index.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,208  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /index.com.yang.test.mybatis.controller.UploadController.index.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,208  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was upload-controller
+2018-04-04 17:28:21,209  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index was upload-controller
+2018-04-04 17:28:21,209  INFO CachingOperationNameGenerator:40 - Generating unique operation named: indexUsingGET_1
+2018-04-04 17:28:21,210  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:28:21,211  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:28:21,211  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:28:21,211  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:28:21,211  INFO OperationsKeyGenerator:51 - Cache key generated: /upload.com.yang.test.mybatis.controller.UploadController.singleFileUpload.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,212  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /upload.com.yang.test.mybatis.controller.UploadController.singleFileUpload.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,213  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload was upload-controller
+2018-04-04 17:28:21,214  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload was upload-controller
+2018-04-04 17:28:21,215  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:28:21,215  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:28:21,215  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:28:21,215  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:28:21,216  INFO OperationsKeyGenerator:51 - Cache key generated: /success.com.yang.test.mybatis.controller.UploadController.uploadSuccess.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,216  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /success.com.yang.test.mybatis.controller.UploadController.uploadSuccess.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,216  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess was upload-controller
+2018-04-04 17:28:21,217  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess was upload-controller
+2018-04-04 17:28:21,218  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:28:21,218  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:28:21,219  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:28:21,219  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:28:21,219  INFO OperationsKeyGenerator:51 - Cache key generated: /index2.com.yang.test.mybatis.controller.UploadController2.index2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,219  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /index2.com.yang.test.mybatis.controller.UploadController2.index2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,220  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index2 was upload-controller-2
+2018-04-04 17:28:21,220  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method index2 was upload-controller-2
+2018-04-04 17:28:21,221  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:28:21,221  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:28:21,222  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:28:21,222  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:28:21,222  INFO OperationsKeyGenerator:51 - Cache key generated: /upload2.com.yang.test.mybatis.controller.UploadController2.singleFileUpload2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,222  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /upload2.com.yang.test.mybatis.controller.UploadController2.singleFileUpload2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,224  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload2 was upload-controller-2
+2018-04-04 17:28:21,226  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method singleFileUpload2 was upload-controller-2
+2018-04-04 17:28:21,227  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:28:21,227  INFO CachingAspect:79 - Caching aspect applied for cache models with key java.lang.String(true)
+2018-04-04 17:28:21,227  INFO ModelContextKeyGenerator:46 - Cache Key Generated: java.lang.String(true)
+2018-04-04 17:28:21,227  INFO CachingAspect:79 - Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-04-04 17:28:21,227  INFO OperationsKeyGenerator:51 - Cache key generated: /success2.com.yang.test.mybatis.controller.UploadController2.uploadSuccess2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,227  INFO CachingAspect:68 - Caching aspect applied for cache operations with key /success2.com.yang.test.mybatis.controller.UploadController2.uploadSuccess2.DefaultGenericTypeNamingStrategy
+2018-04-04 17:28:21,228  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess2 was upload-controller-2
+2018-04-04 17:28:21,228  INFO ClassOrApiAnnotationResourceGrouping:100 - Group for method uploadSuccess2 was upload-controller-2
+2018-04-04 17:28:21,230  INFO Http11NioProtocol:180 - Initializing ProtocolHandler ["http-nio-8080"]
+2018-04-04 17:28:21,231  INFO Http11NioProtocol:180 - Starting ProtocolHandler ["http-nio-8080"]
+2018-04-04 17:28:21,235  INFO NioSelectorPool:180 - Using a shared selector for servlet write/read
+2018-04-04 17:28:21,241  INFO TomcatEmbeddedServletContainer:162 - Tomcat started on port(s): 8080 (http)
+2018-04-04 17:28:21,244  INFO ApplicationDemo:57 - Started ApplicationDemo in 1.704 seconds (JVM running for 47.715)
+2018-04-04 17:28:21,426  INFO [/]:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-04-04 17:28:21,426  INFO DispatcherServlet:488 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-04 17:28:21,432  INFO DispatcherServlet:507 - FrameworkServlet 'dispatcherServlet': initialization completed in 6 ms
+2018-04-04 17:28:21,433  INFO WebLogAspect:32 - URL : http://localhost:8080/index3
+2018-04-04 17:28:21,433  INFO WebLogAspect:33 - HTTP_METHOD : GET
+2018-04-04 17:28:21,434  INFO WebLogAspect:34 - IP : 0:0:0:0:0:0:0:1
+2018-04-04 17:28:21,434  INFO WebLogAspect:35 - CLASS_METHOD : com.yang.test.controller.ThmeleafController.index
+2018-04-04 17:28:21,434  INFO WebLogAspect:36 - ARGS : [{}]
+2018-04-04 17:28:21,443  INFO WebLogAspect:43 - RESPONSE : index
+2018-04-04 17:28:21,446  INFO TemplateEngine:825 - [THYMELEAF] INITIALIZING TEMPLATE ENGINE
+2018-04-04 17:28:21,451  INFO AbstractTemplateResolver:99 - [THYMELEAF] INITIALIZING TEMPLATE RESOLVER: org.thymeleaf.templateresolver.TemplateResolver
+2018-04-04 17:28:21,451  INFO AbstractTemplateResolver:110 - [THYMELEAF] TEMPLATE RESOLVER INITIALIZED OK
+2018-04-04 17:28:21,451  INFO AbstractMessageResolver:72 - [THYMELEAF] INITIALIZING MESSAGE RESOLVER: org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+2018-04-04 17:28:21,451  INFO AbstractMessageResolver:78 - [THYMELEAF] MESSAGE RESOLVER INITIALIZED OK
+2018-04-04 17:28:21,454  INFO CONFIG:123 - [THYMELEAF] TEMPLATE ENGINE CONFIGURATION:
+[THYMELEAF] * Cache Factory implementation: org.thymeleaf.cache.StandardCacheManager
+[THYMELEAF] * Template modes:
+[THYMELEAF]     * HTML5
+[THYMELEAF]     * VALIDXHTML
+[THYMELEAF]     * VALIDXML
+[THYMELEAF]     * XML
+[THYMELEAF]     * LEGACYHTML5
+[THYMELEAF]     * XHTML
+[THYMELEAF] * Template resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.templateresolver.TemplateResolver
+[THYMELEAF] * Message resolvers (in order):
+[THYMELEAF]     * org.thymeleaf.spring4.messageresolver.SpringMessageResolver
+[THYMELEAF] * Dialect [1 of 2]: org.thymeleaf.spring4.dialect.SpringStandardDialect
+[THYMELEAF]     * Prefix: "th"
+[THYMELEAF] * Dialect [2 of 2]: nz.net.ultraq.thymeleaf.LayoutDialect
+[THYMELEAF]     * Prefix: "layout"
+[THYMELEAF] TEMPLATE ENGINE CONFIGURED OK
+2018-04-04 17:28:21,454  INFO TemplateEngine:838 - [THYMELEAF] TEMPLATE ENGINE INITIALIZED
