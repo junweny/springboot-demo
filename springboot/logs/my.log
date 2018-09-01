@@ -1,4 +1,16 @@
-2018-08-18 09:46:32,574  INFO SendEmailDemo:50 ---- Starting SendEmailDemo on DESKTOP-K1U3UTI with PID 15676 (started by yang in E:\workspace\springboot)
-2018-08-18 09:46:32,575 DEBUG SendEmailDemo:53 ---- Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
-2018-08-18 09:46:32,576  INFO SendEmailDemo:659 ---- No active profile set, falling back to default profiles: default
-2018-08-18 09:46:36,391  INFO SendEmailDemo:59 ---- Started SendEmailDemo in 4.196 seconds (JVM running for 5.436)
+2018-09-01 09:11:31,022  INFO ApplicationDemo:50 ---- Starting ApplicationDemo on DESKTOP-K1U3UTI with PID 74472 (E:\git\springboot-demo\springboot\target\classes started by yang in E:\git\springboot-demo\springboot)
+2018-09-01 09:11:31,024 DEBUG ApplicationDemo:53 ---- Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-09-01 09:11:31,025  INFO ApplicationDemo:659 ---- No active profile set, falling back to default profiles: default
+2018-09-01 09:11:35,241  INFO ApplicationDemo:59 ---- Started ApplicationDemo in 4.648 seconds (JVM running for 5.46)
+2018-09-01 09:43:35,803  INFO ApplicationDemo:50 ---- Starting ApplicationDemo on DESKTOP-K1U3UTI with PID 74472 (E:\git\springboot-demo\springboot\target\classes started by yang in E:\git\springboot-demo\springboot)
+2018-09-01 09:43:35,828 DEBUG ApplicationDemo:53 ---- Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-09-01 09:43:35,829  INFO ApplicationDemo:659 ---- No active profile set, falling back to default profiles: default
+2018-09-01 09:43:37,112  INFO ApplicationDemo:59 ---- Started ApplicationDemo in 1.417 seconds (JVM running for 1927.359)
+2018-09-01 09:43:40,721  INFO ApplicationDemo:50 ---- Starting ApplicationDemo on DESKTOP-K1U3UTI with PID 74472 (E:\git\springboot-demo\springboot\target\classes started by yang in E:\git\springboot-demo\springboot)
+2018-09-01 09:43:40,722 DEBUG ApplicationDemo:53 ---- Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-09-01 09:43:40,722  INFO ApplicationDemo:659 ---- No active profile set, falling back to default profiles: default
+2018-09-01 09:43:41,728  INFO ApplicationDemo:59 ---- Started ApplicationDemo in 1.021 seconds (JVM running for 1931.975)
+2018-09-01 09:44:35,488  INFO ApplicationDemo:50 ---- Starting ApplicationDemo on DESKTOP-K1U3UTI with PID 74472 (E:\git\springboot-demo\springboot\target\classes started by yang in E:\git\springboot-demo\springboot)
+2018-09-01 09:44:35,489 DEBUG ApplicationDemo:53 ---- Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-09-01 09:44:35,489  INFO ApplicationDemo:659 ---- No active profile set, falling back to default profiles: default
+2018-09-01 09:44:36,534  INFO ApplicationDemo:59 ---- Started ApplicationDemo in 1.06 seconds (JVM running for 1986.781)

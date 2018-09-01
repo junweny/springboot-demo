@@ -1,0 +1,4 @@
+2018-08-18 09:46:32,574  INFO SendEmailDemo:50 ---- Starting SendEmailDemo on DESKTOP-K1U3UTI with PID 15676 (started by yang in E:\workspace\springboot)
+2018-08-18 09:46:32,575 DEBUG SendEmailDemo:53 ---- Running with Spring Boot v2.0.1.RELEASE, Spring v5.0.5.RELEASE
+2018-08-18 09:46:32,576  INFO SendEmailDemo:659 ---- No active profile set, falling back to default profiles: default
+2018-08-18 09:46:36,391  INFO SendEmailDemo:59 ---- Started SendEmailDemo in 4.196 seconds (JVM running for 5.436)
