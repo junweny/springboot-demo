@@ -28,6 +28,6 @@ jobs:
         key: ${{ secrets.PRIVATE_KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          tar -zcvf test.tar.gz /home/workspace/img
+          tar -zcvf test.tar.gz -P /home/workspace/img
 
 
