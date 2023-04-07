@@ -16,7 +16,9 @@ jobs:
 
     steps:
     - name: Test
+      env:
+        PATH: "username"
       run: |
-        echo $GITHUB_WORKSPACE
+        echo $PATH
 
 
