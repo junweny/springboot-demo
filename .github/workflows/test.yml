@@ -11,14 +11,22 @@ on:
 
 jobs:
   build:
-
+    
     runs-on: ubuntu-latest
-
+    environment: dev
     steps:
     - name: Test
       env:
         PATH: "username"
       run: |
         echo $PATH
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@v0.1.9
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.PRIVATE_KEY }}
+        port: ${{ secrets.PORT }}
+        script: whoami
 
 
